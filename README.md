@@ -11,9 +11,12 @@ to just one signal among many.
 
 
 
+https://github.com/user-attachments/assets/9e7bb5be-83c3-4ad4-9588-c55a7907f91e
 
 
-> See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for the full design rationale.
+
+
+
 
 ## Quickstart
 
