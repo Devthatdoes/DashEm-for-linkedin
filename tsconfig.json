@@ -1,0 +1,9 @@
+{
+  // WXT generates ./.wxt/tsconfig.json on `wxt prepare` (runs via postinstall).
+  // It sets up the `@/` path alias (→ project root) and DOM + extension types.
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true
+  }
+}

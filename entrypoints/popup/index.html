@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dash—em</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font: 13px/1.45 -apple-system, system-ui, sans-serif;
+        width: 280px; margin: 0; padding: 14px;
+      }
+      h1 { font-size: 15px; margin: 0 0 2px; }
+      h1 .em { color: #c2622c; }
+      .sub { color: #888; font-size: 11.5px; margin: 0 0 12px; }
+      .row { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; gap: 8px; }
+      .row label { font-weight: 600; }
+      input[type="range"] { width: 100%; }
+      .band { color: #888; font-size: 11.5px; margin-top: -4px; }
+      select { font: inherit; }
+      .stats { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(128,128,128,.3); color: #888; font-size: 11.5px; }
+      .stats b { color: inherit; }
+    </style>
+  </head>
+  <body>
+    <h1>dash<span class="em">—</span>em</h1>
+    <p class="sub">AI-style detector for your LinkedIn feed</p>
+
+    <div class="row">
+      <label for="enabled">Enabled</label>
+      <input type="checkbox" id="enabled" />
+    </div>
+
+    <div>
+      <div class="row"><label for="threshold">Badge from</label></div>
+      <input type="range" id="threshold" min="0" max="100" step="5" />
+      <div class="band" id="thresholdVal"></div>
+    </div>
+
+    <div class="row">
+      <label for="showPercent">Show %</label>
+      <input type="checkbox" id="showPercent" />
+    </div>
+
+    <div class="row">
+      <label for="tonePack">Tone</label>
+      <select id="tonePack">
+        <option value="playful">Playful</option>
+        <option value="neutral">Neutral</option>
+      </select>
+    </div>
+
+    <div class="stats">
+      This session: <b id="seen">0</b> scored · <b id="flagged">0</b> flagged
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

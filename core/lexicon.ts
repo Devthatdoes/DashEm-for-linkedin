@@ -1,0 +1,145 @@
+// Living dataset of word/phrase tells. Versioned ON PURPOSE: the vocabulary of
+// AI writing drifts as models change (see the era columns on
+// https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Sources also
+// include current reporting on LinkedIn AI tells (Bloomberg, RTÉ, Originality.AI).
+// Bump `version` whenever you revise the lists; this file ships bundled (never
+// fetched) to preserve the on-device privacy promise.
+
+export const LEXICON = {
+  version: "2026.06",
+
+  /** "AI vocabulary" — words overrepresented in LLM prose. Additive: one is
+   *  noise, a cluster is a strong tell. */
+  aiVocab: [
+    "delve",
+    "tapestry",
+    "testament",
+    "underscore",
+    "underscores",
+    "pivotal",
+    "meticulous",
+    "meticulously",
+    "boasts",
+    "vibrant",
+    "intricate",
+    "intricacies",
+    "interplay",
+    "landscape",
+    "garner",
+    "enduring",
+    "bolster",
+    "bolstered",
+    "foster",
+    "fostering",
+    "showcasing",
+    "emphasizing",
+    "highlighting",
+    "navigating",
+    "realm",
+    "myriad",
+    "embark",
+    "elevate",
+    "streamline",
+    "seamless",
+    "robust",
+    "leverage",
+    "harness",
+    "unlock",
+    "empower",
+    "holistic",
+    "synergy",
+    "paradigm",
+    "transformative",
+    "journey",
+    "additionally",
+    "furthermore",
+    "moreover",
+    "spearhead",
+    "treasure trove",
+  ],
+
+  /** Promotional / puffery language. */
+  puffery: [
+    "groundbreaking",
+    "renowned",
+    "nestled",
+    "in the heart of",
+    "diverse array",
+    "rich tapestry",
+    "commitment to",
+    "natural beauty",
+    "world-class",
+    "cutting-edge",
+    "game-changer",
+    "game changer",
+    "rockstar",
+    "best-in-class",
+    "next-level",
+    "unparalleled",
+  ],
+
+  /** Significance / legacy inflation — phrases that vaguely inflate importance. */
+  significance: [
+    "stands as a testament",
+    "serves as a",
+    "plays a vital role",
+    "plays a crucial role",
+    "plays a pivotal role",
+    "underscores the importance",
+    "reflects a broader",
+    "leaves an indelible mark",
+    "marks a shift",
+    "setting the stage",
+    "deeply rooted",
+  ],
+
+  /** Vague attribution — opinions sourced to unnamed authorities. */
+  vagueAttribution: [
+    "industry reports",
+    "experts argue",
+    "experts say",
+    "observers have cited",
+    "some critics argue",
+    "studies have shown",
+    "it is widely",
+  ],
+
+  /** AI-assistant phrasing accidentally left in the post — a near-certain tell. */
+  assistantLeak: [
+    "as a large language model",
+    "as an ai language model",
+    "as an ai",
+    "i'm an ai",
+    "let me know if you need any",
+    "let me know if you'd like me to",
+    "feel free to adjust",
+    "feel free to modify",
+    "feel free to tweak",
+    "here's a draft",
+    "here is a draft",
+    "hope this helps",
+    "i cannot browse",
+    "my training data",
+  ],
+
+  /** Casual human markers (NEGATIVE signal). */
+  slang: [
+    "lol",
+    "lmao",
+    "lmfao",
+    "idk",
+    "tbh",
+    "imo",
+    "imho",
+    "ngl",
+    "omg",
+    "fr fr",
+    "iykyk",
+    "btw",
+    "gonna",
+    "wanna",
+    "kinda",
+    "dunno",
+    "yeah",
+  ],
+} as const;

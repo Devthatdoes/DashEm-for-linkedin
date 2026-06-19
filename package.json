@@ -1,0 +1,25 @@
+{
+  "name": "dash-em",
+  "version": "0.1.0",
+  "description": "Flags likely-AI text in your LinkedIn feed as you scroll — scored on-device, with a playful, transparent AI-style badge.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "wxt": "^0.19.0"
+  }
+}
