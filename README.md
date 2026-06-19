@@ -1,4 +1,4 @@
-# dash—em
+# Dash—Em For LinkedIn
 
 Flags likely-AI text in your **LinkedIn feed** as you scroll, with a playful,
 transparent "AI-style" badge, scored **entirely on-device**. No backend, no API
@@ -6,6 +6,12 @@ keys, no post text ever leaves your browser.
 
 The em-dash (`—`) in the name is the joke: the most famous AI tell, demoted here
 to just one signal among many.
+
+
+
+https://github.com/user-attachments/assets/670d8a90-9ba9-4047-806b-0803940107bf
+
+
 
 > See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for the full design rationale.
 
